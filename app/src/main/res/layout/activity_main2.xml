@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <LinearLayout tools:ignore="MissingConstraints"
+        style="@style/headerLayout">
+
+        <TextView
+            style="@style/headerText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Deposer une annonce" />
+    </LinearLayout>
+
+    <LinearLayout
+     style="@style/grisLayout"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/headerColor"
+            android:text="1/3:a propos de votre annonce" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/mainLayout">
+
+        <LinearLayout style="@style/horLayout">
+
+            <TextView
+                style="@style/champTextView"
+                android:text="Titre:(*)" />
+
+            <EditText
+                android:id="@+id/titreinput"
+                style="@style/champEditText"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/horLayout">
+
+            <TextView
+                style="@style/champTextView"
+                android:text="Categorier:(*)" />
+
+            <Spinner
+
+                android:id="@+id/categorierspinner"
+                style="@style/champEditText"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:entries="@array/categorie"
+
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/horLayout">
+
+            <TextView
+                style="@style/champTextView"
+                android:text="Secteur:" />
+
+            <Spinner
+                android:id="@+id/secteurspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:entries="@array/secteur"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+
+<LinearLayout style="@style/horLayout">
+        <TextView
+            style="@style/champTextView"
+            android:text="Type de Contrat:" />
+
+        <EditText
+            style="@style/champEditText"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+
+        <LinearLayout style="@style/horLayout">
+
+            <TextView
+                style="@style/champTextView"
+                android:text="Description:(*)" />
+
+            <EditText
+                android:id="@+id/descriptioninput"
+                style="@style/champEditText"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:lines="7"
+                android:maxLines="10"
+                android:minLines="8"
+                android:singleLine="false"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/horLayout">
+
+            <TextView
+                style="@style/champTextView"
+                android:text="Ville:" />
+
+            <Spinner
+                android:id="@+id/villespinner"
+                style="@style/champEditText"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border"
+                android:entries="@array/ville"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/grisLayout"
+        android:gravity="end">
+      <Button
+          android:id="@+id/suivant"
+          android:onClick="suivant"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_gravity="right"
+          android:backgroundTint="@color/headerColor"
+          android:text="Suivant"
+     />
+    </LinearLayout>
+</LinearLayout>

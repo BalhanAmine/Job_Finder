@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    style="@style/headerLayout">
+<ImageView
+    android:layout_height="match_parent"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:src="@drawable/login">
+</ImageView>
+    <TextView
+        android:id="@+id/textView"
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:text="@string/cnx"
+        style="@style/headerText" />
+
+</LinearLayout>
+
+    <LinearLayout
+        style="@style/mainLayout">
+<LinearLayout
+    android:id="@+id/showToast"
+    style="@style/horLayout"
+    >
+
+        <TextView
+            android:id="@+id/erreur"
+            android:background="@color/red"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</LinearLayout>
+        <TextView
+            android:id="@+id/emailtxt"
+            style="@style/inputTextView"
+            android:text="E-mail :"/>
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/inputEditText"
+            android:background="@drawable/border"
+            android:hint="Votre adresse e-mail..."
+            android:inputType="textEmailAddress"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <TextView
+            android:id="@+id/passwordtxt"
+            style="@style/inputTextView"
+            android:text="Mot de passe :">
+        </TextView>
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/inputEditText"
+            android:background="@drawable/border"
+            android:hint="@string/votre_mot_de_passe"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="TextFields,TouchTargetSizeCheck" />
+
+
+        <Button
+            android:id="@+id/submitbtn"
+            style="@style/ButtonStyle"
+            android:onClick="Connecter"
+            android:text="Se connecter" />
+
+        <CheckBox
+            style="@style/CheckBoxStyle"
+            android:text="Garder ma session active"/>
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="Mot de passe oublie?" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:background="@color/footerColor"
+  >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:text="Vous n'avez pas encore de copte?"/>
+
+    <TextView
+        android:id="@+id/inscrlink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/footerColor"
+        android:gravity="center"
+        android:onClick="InscriptionLink"
+        android:text="Inscrivez -vous ici"
+        android:textColor="@color/headerColor"
+        android:textSize="19sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>
+
+</LinearLayout>

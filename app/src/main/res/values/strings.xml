@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Job Finder</string>
+    <string name="cnx">Connexion</string>
+    <string name="votre_mot_de_passe">Votre mot de passe...</string>
+
+    <string-array name="categorie">
+        <item>Informatique et Technologies </item>
+        <item>Vente et Marketing</item>
+        <item>Santé et Médical</item>
+        <item>Juridique </item>
+    </string-array>
+
+    <string-array name="secteur">
+        <item>Publique</item>
+        <item>Privé</item>
+    </string-array>
+
+
+    <string-array name="ville">
+        <item>Agadir</item>
+        <item>Casablanca</item>
+        <item>Tanger</item>
+        <item>Marrakech</item>
+        <item>Rabat</item>
+    </string-array>
+</resources>
